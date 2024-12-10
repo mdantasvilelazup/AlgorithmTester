@@ -1,3 +1,5 @@
+package src;
+
 public class SumAlgorithm implements Algorithm {
 
     int sum;
@@ -13,5 +15,5 @@ public class SumAlgorithm implements Algorithm {
         return input;
     }
 
-    
+
 }

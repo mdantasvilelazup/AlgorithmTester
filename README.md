@@ -10,7 +10,7 @@ A classe AlgorithmTester recebe um Algorithm e ao chamar a função test da clas
 - Mede o tempo de execução do algoritmo recebido em milisegundos
 
 Executando a função main da classe AlgorithmTester:
-- Instancia a implementação SumAlgorithm de Algorithm
+- Instancia um SumAlgorithm, uma implementação da interface Algorithm
 - Instancia um AlgorithmTester recebendo o SumAlgorithm instanciado
 - Gera um array de números aleatórios
 - Printa esse array no terminal

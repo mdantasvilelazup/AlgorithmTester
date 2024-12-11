@@ -2,9 +2,9 @@ package src;
 
 public class AlgorithmTester {
 
-	public Algorithm algorithm;
+	public MergeAndSortAlgorithm algorithm;
 
-	public AlgorithmTester(Algorithm algorithm) {
+	public AlgorithmTester(MergeAndSortAlgorithm algorithm) {
 		this.algorithm = algorithm;
 	}
 
@@ -40,13 +40,16 @@ public class AlgorithmTester {
 	}
 
 	public static void main(String[] args) {
-		Algorithm sum = new SumAlgorithm();
-		AlgorithmTester tester = new AlgorithmTester(sum);
+		MergeAndSortAlgorithm algorithm = new MergeAndSortAlgorithm();
+		//Algorithm sum = new SumAlgorithm();
+		//AlgorithmTester tester = new AlgorithmTester(sum);
+		AlgorithmTester tester2 = new AlgorithmTester(algorithm);
+		int[] array = tester2.generateRandomInput(100);
 
-		int[] array = tester.generateRandomInput(100);
+		System.out.println("Após a ordenação...");
 
-		tester.print(array);
-		tester.test(100);
+		tester2.print(array);
+		tester2.test(100);
 	}
 
 

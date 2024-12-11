@@ -1,10 +1,13 @@
-#O Merge Sort é um algoritmo de ordenação eficiente, baseado no princípio de divisão e conquista. Ele funciona dividindo a lista original em sublistas menores, ordenando essas sublistas e, em seguida, mesclando-as para produzir uma lista ordenada final. Vamos ver um exemplo de como isso funciona em Java:
+# Merge Sort
+O Merge Sort é um algoritmo de ordenação eficiente, baseado no princípio de divisão e conquista. 
+Ele funciona dividindo a lista original em sublistas menores, ordenando essas sublistas e, em seguida, 
+mesclando-as para produzir uma lista ordenada final. Vamos ver um exemplo de como isso funciona em Java:
 
-# Testador de algoritmos
+## Testador de algoritmos
 
 A classe AlgorithmTester serve para testar qualquer outra classe que implemente a interface Algorithm.
         
-## Como funciona
+### Como funciona
 
 A classe AlgorithmTester recebe um Algorithm e ao chamar a função test da classe AlgorithmTester ela:
 - Gera um vetor de inteiros aleatórios do tamanho especificado, esse vetor será o input do algoritmo

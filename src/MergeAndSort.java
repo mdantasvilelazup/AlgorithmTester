@@ -59,15 +59,9 @@ public class MergeAndSort {
 
 			sort(array, l, m);
 			sort(array, m + 1, r);
-
-						merge(array, l, m, r);
+			merge(array, l, m, r);
 		}
 
-		System.out.println("Exibindo array:");
-
-		for (int i : array) {
-			System.out.println(i);
-		}
 		return array;
 	}
 }

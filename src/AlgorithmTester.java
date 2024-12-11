@@ -10,13 +10,20 @@ public class AlgorithmTester {
 
 	public long test(int size) {
 		int[] input = generateRandomInput(size);
+		System.out.println("Input aleatório gerado: ");
+		print(input);
+		System.out.println();
 
 		long start = System.nanoTime();
-		algorithm.run(input);
+		int[] result = algorithm.run(input);
 		long end = System.nanoTime();
 
+		System.out.println("Resultado do algoritmo: ");
+		print(result);
+		System.out.println();
+
 		long time = (end - start) / 1000;
-		System.out.println("src.Algorithm ran in " + time + " ms");
+		System.out.println("Algoritmo executado em " + time + " ms");
 
 		return time;
 	}
@@ -41,15 +48,9 @@ public class AlgorithmTester {
 
 	public static void main(String[] args) {
 		MergeAndSortAlgorithm algorithm = new MergeAndSortAlgorithm();
-		//Algorithm sum = new SumAlgorithm();
-		//AlgorithmTester tester = new AlgorithmTester(sum);
-		AlgorithmTester tester2 = new AlgorithmTester(algorithm);
-		int[] array = tester2.generateRandomInput(100);
+		AlgorithmTester tester = new AlgorithmTester(algorithm);
 
-		System.out.println("Após a ordenação...");
-
-		tester2.print(array);
-		tester2.test(100);
+		tester.test(100);
 	}
 
 

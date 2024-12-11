@@ -1,6 +1,6 @@
 package src;
 
-public class MergAndSort {
+public class MergeAndSort {
 
 	public static int[] merge(int[] array, int l, int m, int r) {
 		int firstHalf = m - l + 1;
